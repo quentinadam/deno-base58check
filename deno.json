@@ -1,6 +1,6 @@
 {
   "name": "@quentinadam/base58check",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "exports": "./base58check.ts",
   "imports": {
@@ -8,7 +8,6 @@
     "@quentinadam/base58": "jsr:@quentinadam/base58@^0.1.3",
     "@quentinadam/hash": "jsr:@quentinadam/hash@^0.1.0",
     "@quentinadam/hex": "jsr:@quentinadam/hex@^0.1.1",
-    "@quentinadam/require": "jsr:@quentinadam/require@^0.1.1",
     "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.4"
   },
   "publish": {
