@@ -1,7 +1,7 @@
 import assert from '@quentinadam/assert';
-import Uint8ArrayExtension from '@quentinadam/uint8array-extension';
-import sha256 from '@quentinadam/hash/sha256';
 import * as base58 from '@quentinadam/base58';
+import sha256 from '@quentinadam/hash/sha256';
+import * as Uint8ArrayExtension from '@quentinadam/uint8array-extension';
 
 function computeChecksum(buffer: Uint8Array) {
   return sha256(sha256(buffer)).slice(0, 4);
@@ -42,6 +42,6 @@ export function decode(string: string, options?: Options): Uint8Array {
     assert(buffer.length >= 4);
     return { buffer: buffer.slice(0, -4), checkSum: buffer.slice(-4) };
   })();
-  assert(new Uint8ArrayExtension(computeChecksum(buffer)).equals(checkSum));
+  assert(Uint8ArrayExtension.equals(computeChecksum(buffer), checkSum));
   return buffer;
 }

@@ -1,0 +1,85 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@quentinadam/assert@~0.1.10": "0.1.10",
+    "jsr:@quentinadam/assert@~0.1.7": "0.1.10",
+    "jsr:@quentinadam/assert@~0.1.9": "0.1.10",
+    "jsr:@quentinadam/base58@~0.1.5": "0.1.5",
+    "jsr:@quentinadam/hash@~0.1.1": "0.1.1",
+    "jsr:@quentinadam/hex@~0.1.2": "0.1.2",
+    "jsr:@quentinadam/require@~0.1.1": "0.1.4",
+    "jsr:@quentinadam/require@~0.1.4": "0.1.4",
+    "jsr:@quentinadam/uint8array-extension@~0.1.4": "0.1.5",
+    "jsr:@quentinadam/uint8array-extension@~0.1.5": "0.1.5",
+    "npm:@noble/hashes@^1.6.1": "1.6.1",
+    "npm:typescript@^5.7.2": "5.7.2"
+  },
+  "jsr": {
+    "@quentinadam/assert@0.1.10": {
+      "integrity": "623eb01c4eb8bbe6420abcbc06792dbd5ca4301c270ac04b3745deac099f70df"
+    },
+    "@quentinadam/base58@0.1.5": {
+      "integrity": "8b996e88d7c6078dba6433ab8fa4f59eb83d45314e102ab360ae213b4d824d20",
+      "dependencies": [
+        "jsr:@quentinadam/assert@~0.1.10",
+        "jsr:@quentinadam/require@~0.1.4"
+      ]
+    },
+    "@quentinadam/hash@0.1.1": {
+      "integrity": "f2b12189c1da9f658b99dd9cca1f65c035065062d0ec1eb9a7480f6845ca341b",
+      "dependencies": [
+        "jsr:@quentinadam/require@~0.1.4",
+        "jsr:@quentinadam/uint8array-extension@~0.1.5",
+        "npm:@noble/hashes"
+      ]
+    },
+    "@quentinadam/hex@0.1.2": {
+      "integrity": "98173552cc812ab70e1d9c0618a9f51e7b28abbb55d8ea5d734bd520a003f8d0",
+      "dependencies": [
+        "jsr:@quentinadam/assert@~0.1.10"
+      ]
+    },
+    "@quentinadam/require@0.1.2": {
+      "integrity": "22091b5880c89424c1c7e45aaac550f99000f57b1d354b128e98c76b3f2b1856",
+      "dependencies": [
+        "jsr:@quentinadam/assert@~0.1.9"
+      ]
+    },
+    "@quentinadam/require@0.1.4": {
+      "integrity": "ef2a475d3fc241817470e540bd892ac23520d620ffb23b7796c940df31391c72",
+      "dependencies": [
+        "jsr:@quentinadam/assert@~0.1.10"
+      ]
+    },
+    "@quentinadam/uint8array-extension@0.1.4": {
+      "integrity": "61ec4ddb63a68c78016682198e6cc942134765bbc1b437a8f5d360256099af49",
+      "dependencies": [
+        "jsr:@quentinadam/assert@~0.1.7"
+      ]
+    },
+    "@quentinadam/uint8array-extension@0.1.5": {
+      "integrity": "d7ccf8c8841947c7410c2db3249eb88a77bc1677b2a1c945971b8ead57e725b4",
+      "dependencies": [
+        "jsr:@quentinadam/assert@~0.1.10"
+      ]
+    }
+  },
+  "npm": {
+    "@noble/hashes@1.6.1": {
+      "integrity": "sha512-pq5D8h10hHBjyqX+cfBm0i8JUXJ0UhczFc4r74zbuT9XgewFo2E3J1cOaGtdZynILNmQ685YWGzGE1Zv6io50w=="
+    },
+    "typescript@5.7.2": {
+      "integrity": "sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@quentinadam/assert@~0.1.10",
+      "jsr:@quentinadam/base58@~0.1.5",
+      "jsr:@quentinadam/hash@~0.1.1",
+      "jsr:@quentinadam/hex@~0.1.2",
+      "jsr:@quentinadam/uint8array-extension@~0.1.5",
+      "npm:typescript@^5.7.2"
+    ]
+  }
+}

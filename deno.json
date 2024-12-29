@@ -1,26 +1,23 @@
 {
   "name": "@quentinadam/base58check",
   "version": "0.1.2",
+  "description": "A simple library to encode and decode base58check strings",
   "license": "MIT",
-  "exports": "./base58check.ts",
+  "exports": "./src/base58check.ts",
   "imports": {
-    "@quentinadam/assert": "jsr:@quentinadam/assert@^0.1.7",
-    "@quentinadam/base58": "jsr:@quentinadam/base58@^0.1.3",
-    "@quentinadam/hash": "jsr:@quentinadam/hash@^0.1.0",
-    "@quentinadam/hex": "jsr:@quentinadam/hex@^0.1.1",
-    "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.4"
-  },
-  "publish": {
-    "exclude": [
-      ".github/",
-      ".vscode/"
-    ]
+    "@quentinadam/assert": "jsr:@quentinadam/assert@^0.1.10",
+    "@quentinadam/base58": "jsr:@quentinadam/base58@^0.1.5",
+    "@quentinadam/hash": "jsr:@quentinadam/hash@^0.1.1",
+    "@quentinadam/hex": "jsr:@quentinadam/hex@^0.1.2",
+    "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.5",
+    "typescript": "npm:typescript@^5.7.2"
   },
   "fmt": {
     "singleQuote": true,
     "lineWidth": 120
   },
-  "tasks": {
-    "check": "deno check **/*.ts"
+  "compilerOptions": {
+    "noUncheckedIndexedAccess": true,
+    "noImplicitReturns": true
   }
 }
