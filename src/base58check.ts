@@ -3,7 +3,7 @@ import * as base58 from '@quentinadam/base58';
 import sha256 from '@quentinadam/hash/sha256';
 import * as Uint8ArrayExtension from '@quentinadam/uint8array-extension';
 
-function computeChecksum(buffer: Uint8Array) {
+function computeChecksum(buffer: Uint8Array<ArrayBuffer>) {
   return sha256(sha256(buffer)).slice(0, 4);
 }
 
@@ -25,18 +25,18 @@ export interface Options {
  * @param options The options to use for encoding.
  * @returns The base58check encoded string.
  */
-export function encode(buffer: Uint8Array, options?: Options): string {
+export function encode(buffer: Uint8Array<ArrayBuffer>, options?: Options): string {
   return base58.encode(Uint8ArrayExtension.concat([buffer, computeChecksum(buffer)]), options);
 }
 
 /**
- * Decodes a base58check encoded string into a Uint8Array buffer.
+ * Decodes a base58check encoded string into a Uint8Array<ArrayBuffer> buffer.
  *
  * @param string The base58check encoded string.
  * @param options The options to use for decoding.
  * @returns The decoded buffer.
  */
-export function decode(string: string, options?: Options): Uint8Array {
+export function decode(string: string, options?: Options): Uint8Array<ArrayBuffer> {
   const { buffer, checkSum } = (() => {
     const buffer = base58.decode(string, options);
     assert(buffer.length >= 4);
