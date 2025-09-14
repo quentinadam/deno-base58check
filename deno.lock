@@ -5,7 +5,7 @@
     "jsr:@quentinadam/assert@~0.1.12": "0.1.12",
     "jsr:@quentinadam/base58@~0.1.7": "0.1.7",
     "jsr:@quentinadam/ensure@~0.1.1": "0.1.1",
-    "jsr:@quentinadam/hash@~0.1.6": "0.1.6",
+    "jsr:@quentinadam/hash@~0.1.7": "0.1.7",
     "jsr:@quentinadam/hex@~0.1.4": "0.1.4",
     "jsr:@quentinadam/uint8array-extension@~0.1.7": "0.1.7",
     "npm:typescript@^5.9.2": "5.9.2"
@@ -30,8 +30,8 @@
         "jsr:@quentinadam/assert"
       ]
     },
-    "@quentinadam/hash@0.1.6": {
-      "integrity": "09f0ba36697ae3339ef5ff208f0cf1beadf4cbbd90370d4e2caac6045043f55f",
+    "@quentinadam/hash@0.1.7": {
+      "integrity": "7bc3a6bb61e2df01740725ffa84efb9c68a362975f15e1701ca5cf7695c93afd",
       "dependencies": [
         "jsr:@noble/hashes",
         "jsr:@quentinadam/assert",
@@ -62,7 +62,7 @@
     "dependencies": [
       "jsr:@quentinadam/assert@~0.1.12",
       "jsr:@quentinadam/base58@~0.1.7",
-      "jsr:@quentinadam/hash@~0.1.6",
+      "jsr:@quentinadam/hash@~0.1.7",
       "jsr:@quentinadam/hex@~0.1.4",
       "jsr:@quentinadam/uint8array-extension@~0.1.7",
       "npm:typescript@^5.9.2"
