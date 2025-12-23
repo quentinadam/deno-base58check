@@ -1,6 +1,6 @@
 {
   "name": "@quentinadam/base58check",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "A simple library to encode and decode base58check strings",
   "license": "MIT",
   "author": "Quentin Adam",
@@ -11,8 +11,8 @@
   "exports": "./src/base58check.ts",
   "imports": {
     "@quentinadam/assert": "jsr:@quentinadam/assert@^0.1.13",
-    "@quentinadam/base58": "jsr:@quentinadam/base58@^0.1.8",
-    "@quentinadam/hash": "jsr:@quentinadam/hash@^0.1.8",
+    "@quentinadam/base58": "jsr:@quentinadam/base58@^0.1.9",
+    "@quentinadam/hash": "jsr:@quentinadam/hash@^0.1.9",
     "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.10",
     "typescript": "npm:typescript@^5.9.3"
   },
