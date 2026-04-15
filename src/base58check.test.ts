@@ -1,5 +1,5 @@
-import assert from '@quentinadam/assert';
-import * as base58check from '../src/base58check.ts';
+import { assert } from '@quentinadam/assert';
+import * as base58check from './base58check.ts';
 
 const vectors = [
   { decoded: 'Hello', encoded: 'vSxRbq6XzDhP' },

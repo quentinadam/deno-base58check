@@ -10,10 +10,10 @@
   },
   "exports": "./src/base58check.ts",
   "imports": {
-    "@quentinadam/assert": "jsr:@quentinadam/assert@^0.1.17",
-    "@quentinadam/base58": "jsr:@quentinadam/base58@^0.1.12",
-    "@quentinadam/hash": "jsr:@quentinadam/hash@^0.1.15",
-    "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.18",
+    "@quentinadam/assert": "jsr:@quentinadam/assert@^0.1.18",
+    "@quentinadam/base58": "jsr:@quentinadam/base58@^0.1.13",
+    "@quentinadam/hash": "jsr:@quentinadam/hash@^0.1.16",
+    "@quentinadam/uint8array-extension": "jsr:@quentinadam/uint8array-extension@^0.1.19",
     "typescript": "npm:typescript@^6.0.2"
   },
   "fmt": {
