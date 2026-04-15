@@ -1,6 +1,6 @@
 import assert from '@quentinadam/assert';
 import * as base58 from '@quentinadam/base58';
-import sha256 from '@quentinadam/hash/sha256';
+import { sha256 } from '@quentinadam/hash/sha256';
 import * as Uint8ArrayExtension from '@quentinadam/uint8array-extension';
 
 function computeChecksum(buffer: Uint8Array<ArrayBuffer>) {
