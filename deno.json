@@ -1,6 +1,6 @@
 {
   "name": "@quentinadam/base58check",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "A simple library to encode and decode base58check strings",
   "license": "MIT",
   "author": "Quentin Adam",
